@@ -10,16 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var statusLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        statusLabel.text = " "
+        
+        RadioPlayer.shared.reasonForWaitingToPlayHandler = { [weak self] message in
+            self?.statusLabel.text = message ?? " "
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func didTapPlayPauseButton(_ sender: UIButton) {
+        if RadioPlayer.shared.isPlaying {
+            RadioPlayer.shared.pause()
+            playButton.setTitle("Play", for: .normal)
+        } else {
+            RadioPlayer.shared.play()
+            playButton.setTitle("Pause", for: .normal)
+        }
     }
-
 
 }
 

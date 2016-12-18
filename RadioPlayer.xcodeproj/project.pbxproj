@@ -12,6 +12,7 @@
 		8354F76E1E0633EE0003A9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8354F76C1E0633EE0003A9F4 /* Main.storyboard */; };
 		8354F7701E0633EE0003A9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8354F76F1E0633EE0003A9F4 /* Assets.xcassets */; };
 		8354F7731E0633EE0003A9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8354F7711E0633EE0003A9F4 /* LaunchScreen.storyboard */; };
+		8354F77B1E06341B0003A9F4 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8354F77A1E06341B0003A9F4 /* RadioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		8354F76F1E0633EE0003A9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8354F7721E0633EE0003A9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8354F7741E0633EE0003A9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8354F77A1E06341B0003A9F4 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		8354F77C1E0642250003A9F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 		8354F75C1E0633EE0003A9F4 = {
 			isa = PBXGroup;
 			children = (
+				8354F77C1E0642250003A9F4 /* README.md */,
 				8354F7671E0633EE0003A9F4 /* RadioPlayer */,
 				8354F7661E0633EE0003A9F4 /* Products */,
 			);
@@ -56,6 +60,7 @@
 			children = (
 				8354F7681E0633EE0003A9F4 /* AppDelegate.swift */,
 				8354F76A1E0633EE0003A9F4 /* ViewController.swift */,
+				8354F77A1E06341B0003A9F4 /* RadioPlayer.swift */,
 				8354F76C1E0633EE0003A9F4 /* Main.storyboard */,
 				8354F76F1E0633EE0003A9F4 /* Assets.xcassets */,
 				8354F7711E0633EE0003A9F4 /* LaunchScreen.storyboard */,
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8354F77B1E06341B0003A9F4 /* RadioPlayer.swift in Sources */,
 				8354F76B1E0633EE0003A9F4 /* ViewController.swift in Sources */,
 				8354F7691E0633EE0003A9F4 /* AppDelegate.swift in Sources */,
 			);
